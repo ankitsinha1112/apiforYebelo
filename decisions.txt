@@ -25,7 +25,7 @@ Design/Architectural Patterns and Decisions Used
        Used mocking frameworks (e.g., Mockito) to isolate dependencies and simulate database interactions during testing.
 6.   Database:
 
-       Configured the application to use a persistent database (e.g., MySQL, PostgreSQL) to store the numbers and category codes.
+       Configured the application to use a persistent database (e.g., MySQL) to store the numbers and category codes.
        Handled database connection and schema configuration using application properties.
 7.   Error Handling:
 
