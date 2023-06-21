@@ -1,0 +1,26 @@
+=========================================
+Minimal Usage Guide and Features Implemented
+API Endpoint: /fetchNextNumber
+
+Method: POST
+Request Body: JSON object containing "categoryCode"
+Returns: JSON response with "oldValue" and "newValue"
+How to Use:
+
+Send a POST request to the /fetchNextNumber endpoint with the following JSON payload:
+{
+"categoryCode": "your_category_code"
+}
+The API will fetch the current value associated with the given category code.
+It will calculate the next number according to the specified rules.
+The API will update the value in the database and return the old and new values in the response.
+Features Implemented:
+
+Database Data Persistence: The numbers and their corresponding category codes are stored in a persistent database, ensuring data durability.
+Unique Number Generation: The system guarantees that the next number generated for a category code is unique and follows the defined rules.
+Synchronization: The API handles concurrent requests and ensures that each request receives a unique and correctly calculated next number.
+Error Handling:
+
+If no number is found for the given category code, the API assumes a value of 0.
+If any error occurs during the process, an appropriate error response is returned with an error message.
+=========================================
